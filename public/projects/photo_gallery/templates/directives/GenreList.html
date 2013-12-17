@@ -1,0 +1,25 @@
+
+<div id="genre-list" >
+    <div id="genre-list-container">
+        <div class="genre-list-option" ng-repeat="genre in genres">
+            <input type="checkbox" name="genres" id="{{ genre.name }}" class="genre-checkbox" value="{{ genre.name }}"/>
+            <label for="{{ genre.name }}">
+                <span>{{ genre.name }}</span>
+            </label>
+        </div>
+    </div>
+
+    <div id="new-genre-container">
+        <div>
+            <label for="new-genre" style="display:inline"> New genre (fifteen symbols max.):</label>
+            <input type="text" name="new-genre" id="new-genre" maxlength=15
+                   pattern="[a-zA-Z1-9]{15}" title="Fifteen symbols max."
+                   placeholder="Fifteen symbols max."/>
+            <a id="new-genre-anchor" href="#" class="toggle-enable" disabled> Create</a>
+        </div>
+    </div>
+
+    <div id="error-message" class="invisible">
+        <span> Genre name: one word (letters only) fifteen symbols max.!</span>
+    </div>
+</div>

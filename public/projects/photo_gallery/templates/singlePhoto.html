@@ -1,0 +1,101 @@
+
+<div id="single-wrapper" ng-init="initSinglePhoto()" >
+    <div id="photo-container" class="centered">
+        <div id="photo-title" class="centered">
+            <span id="photo-name" text="getPhotoName()" >{{ photos[1].photoname }}</span>
+            <span style='margin-left:15px'> by </span>
+            <a id="photo-author" href="#" title="View all photos of the author"
+               ng-href="/genre?selectionMode=authors&gallery={{ photos[1].author }}">
+                {{ photos[1].author }}
+            </a>
+
+            <exif-data class="exif-data" popover="{{camera}}" popover-trigger="mouseenter"
+                    popover-placement="right"> Exif
+                <!--div>
+                    {{camera}}
+                </div-->
+            </exif-data>
+
+            <div id="single-photo-menu" ng-show="enableSinglePhotoMenu()" >
+                <a id="photo-trash" href="#" title="Delete photo" ng-click="deletePhoto()">
+                    <img ng-src="../images/symbol-delete-icon-16x16.png"/>
+                </a>
+                <a id="photo-add-genres" ng-href="/editPhoto" title="Change photo genres">
+                    <img ng-src="../images/star-rating-icon-16x16.png"/>
+                </a>
+            </div>
+        </div>
+
+        <div id="prev-photo-cell" >
+            <div id="prev-photo" scroll-image ng-style="showPrevScroll()"></div>
+        </div>
+
+        <div id="photo-frame" view-photo-frame source="{{ photos[1].link }}">
+            <img id="single-photo-content" class="klb-fit-screen single-photo"
+                 ng-src="{{ photos[1].link }}" exif="true" view-photo/>
+        </div>
+        <!--view-photo-frame source="photos[1].link"></view-photo-frame-->
+
+        <div id="next-photo-cell" >
+            <div id="next-photo" scroll-image  ng-style="showNextScroll()"></div>
+        </div>
+    </div>
+
+    <div id="photo-tags" class="centered">
+        <a ng-repeat="g in photos[1].genres"
+           ng-href="/genre?selectionMode=genres&genre={{ g.name }}">{{ g.name }}</a>
+    </div>
+
+    <div id="photo-comments" class="centered">
+        <span style="font-size:larger"> Comments:</span>
+
+        <div id="photo-comments-frame">
+            <div id="photo-comments-title">
+                <span id="comment-author" class="comment-info"> {{ currentCommentAuthor() }}</span>
+                <span id="comment-date">{{ currentCommentDate() }}</span>
+
+                <nav id="comment-nav" >
+                    <a id="prev-comment" href="#" title="Previous comment" ng-click="prevComment()"
+                       ng-style="enablePrevCommentBtn()">
+                        <div id="img-prev-comment"></div>
+                    </a>
+
+                    <div id="comments-counter">
+                        <div class="comment-counter" >{{ getCommentInd() }}</div>
+                        <span class="comment-counter"> / </span>
+                        <div class="comment-counter" >{{ comments.length }}</div>
+                    </div>
+
+                    <a id="next-comment" href="#" title="Next comment" ng-click="nextComment()"
+                       ng-style="enableNextCommentBtn()">
+                        <div id="img-next-comment"></div>
+                    </a>
+                </nav>
+            </div>
+            
+             <div id="comment">
+                 <div id="comment-read" class="comment-text" ng-show="!commentWritable">
+                      {{ comments[currentComment].text }}
+                 </div>
+
+                 <div id="comment-write" class="comment-text" ng-show="commentWritable">
+                    <textarea id="comment-text" rows="4" cols="87" wrap="soft" maxlength="1000"
+                              ng-model="newCommentText" ng-change="showLeftSymbols()">
+                    </textarea>
+                 </div>
+
+                 <div id="comment-write-controls" class="centered" ng-show="showCommentControls()">
+                    <span id="left-comment-symbols" ng-show="commentWritable"
+                          ng-model="leftSymbols" > {{ leftSymbols }} symbols left </span>
+
+                    <a id="cancel-comment-btn" class="comment-btn" href="#"
+                       ng-click="cancelComment()" ng-show="commentWritable"> Cancel </a>
+                    <a id="save-comment-btn" class="comment-btn" href="#"
+                       ng-click="saveComment()" ng-show="commentWritable"> Save comment </a>
+                    <a id="write-comment-btn" class="comment-btn" href="#"
+                       ng-click="writeComment()" ng-show="!commentWritable"> Write comment </a>
+                 </div>
+             </div>
+        </div>            
+    </div>
+</div>

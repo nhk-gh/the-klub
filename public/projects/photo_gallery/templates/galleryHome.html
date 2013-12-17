@@ -1,0 +1,35 @@
+
+<div id="wallpaper" class="centered" ng-style="colors()">
+
+    <div id="selectable-tags">
+        <img ng-src="{{ randomPhoto }}" />
+
+        <accordion close-others="true" class="accordion-addon">
+            <accordion-group heading="Genres">
+                <ul class="tags">
+                    <li class="tag-item"  ng-repeat="g in genres " hor-menu-item>
+                        <a class="tag-anchor" title="{{ g.qtty }}"
+                           ng-href="/genre?selectionMode=genres&genre={{ g.name }}&gallery={{ g.name }}">{{ g.name }}</a>
+                    </li>
+                </ul>
+            </accordion-group>
+            <accordion-group heading="Authors">
+                <ul class="tags">
+                    <li class="tag-item"  ng-repeat="a in authors " hor-menu-item>
+                        <a class="tag-anchor" title="{{ a.qtty }}"
+                           ng-href="/genre?selectionMode=authors&genre={{ a.username }}&gallery={{ a.name }}">{{ a.name }}</a>
+                    </li>
+                </ul>
+            </accordion-group>
+            <accordion-group heading="Show All">
+
+            </accordion-group>
+        </accordion>
+    </div>
+
+</div>
+
+
+
+
+

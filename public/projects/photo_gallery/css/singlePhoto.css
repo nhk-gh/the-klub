@@ -1,0 +1,352 @@
+
+/*******************************************************/
+#single-wrapper {
+    width:100%;
+    min-height:796px;
+    height: 100%;
+    position: relative;
+    float:left;
+    background: #003333;
+}
+
+#photo-container{
+    /*background-color: #002222;/* darkslategrey
+    min-height: 600px;*/
+    max-width: 100%;
+    margin-top: 10px;
+    position: relative;
+    left:-5px;
+    display:block;
+    /*border: 1px solid red;*/
+}
+#photo-title{
+    position: relative;
+    background-color: inherit;
+    margin-bottom: 20px;
+    font-size: small;
+    display: block;
+}
+#photo-name{
+    position: relative;
+    float: left;
+    top:2px;
+}
+#photo-author{
+    position: relative;
+    margin-left: 10px;
+    top:2px;
+}
+
+.exif-data{
+    margin-left:205px;
+    display: inline-block;
+}
+
+#single-photo-menu{
+    display: inline-block;
+    float:right;
+}
+a#photo-trash{
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    float:right;
+    opacity: 0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+a#photo-trash:hover{
+    opacity: 1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+a#photo-add-genres{
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    float:right;
+    opacity: 0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+a#photo-add-genres:hover{
+    opacity: 1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#photo-frame{
+    display: inline-block;
+    width: 89%;
+    /*border:1px solid #ff00ff;
+    margin-right: auto;
+    margin-left: auto;*/
+    float: left;
+    position: relative;
+
+}
+#single-photo-content{
+    /*width: 100%;
+    height:100%;*/
+    position:relative;
+    border: 5px solid white;
+    outline: #4a766e solid 10px;
+    visibility: hidden;
+    /*margin-right: auto;
+    margin-left: auto;
+    overflow:visible;
+    display: none;
+    background-color:#002222; /*#7e9fb0;*/
+    /*cursor: url(../images/zoom_in_24x24.png) 0 0, pointer;  /*from  VisualPharm (Ivan Boyko)*/
+}
+.popover {
+    color: #006666;
+}
+#prev-photo-cell, #next-photo-cell{
+    /*width:5%;
+    height:100%;*/
+    display: inline-block;
+    position: relative;
+    top:0px;
+    /*border: 1px solid white; */
+}
+#prev-photo-cell{
+    width:5%;
+    float: left;
+}
+#next-photo-cell{
+    width:5%;
+    float: left;
+}
+#prev-photo, #next-photo{
+    opacity:0.2;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+    position:relative;
+}
+/*
+#prev-photo:hover, #next-photo:hover, .strip-back:hover, .strip-forward:hover{
+    opacity:1;
+    filter:alpha(opacity=100); /* For IE8 and earlier
+}
+*/
+#prev-photo{
+    background: url("../../../images/navigate-left-icon.png") no-repeat center center;
+    /* -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;*/
+}
+#next-photo{
+    background: url("../../../images/navigate-right-icon.png") no-repeat center center;
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+
+#photo-tags{
+    background-color: #004040;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    display: block;
+    margin-top:12px;
+   /* margin-right: auto;*/
+}
+
+
+/*****************************************/
+/*             user comments             */
+/*****************************************/
+#photo-comments{
+    /*border-top: 1px solid #afeeee;*/
+    position: relative;
+    margin-top: 10px;
+}
+#write-comment{
+    float:right;
+    font-size: 14px;
+    margin-right: 15px;
+}
+#photo-comments-frame{
+    position: relative;
+    height:140px;
+    width: 100%;
+    margin-top:5px;
+    border: 1px solid #afeeee;
+    -webkit-border-radius:8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+#photo-comments-title{
+    position:relative;
+    display: inline-block;
+    /*border: 1px solid red;*/
+    height: 20px;
+    width: 100%;
+}
+.comment-info{
+    display:inline-block;
+    margin-left: 3%;
+    margin-right:18px;
+    font-size: smaller;
+
+    /*width: auto;
+    position:absolute;*/
+}
+span#comment-author{
+    position: relative;
+    float: left;
+    top: 3px;
+    display:inline-block;
+    margin-left: 3%;
+    margin-right:18px;
+    font-size: smaller;
+}
+span#comment-date{
+    float:left;
+    font-size: smaller;
+    position: relative;
+    top: 3px;
+}
+#comment-nav{
+    position: relative;
+    display:inline-block;
+    float: right;
+    margin-right: 3%;
+    /*border: 1px solid red;
+    width: 100px;*/
+}
+
+#comment-nav a{
+    position: relative;
+    top:1px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: small;
+}
+#next-comment, #prev-comment{
+    float: left;
+    width: 12px;
+    height: 12px;
+}
+#img-next-comment{
+    background: url("../../../images/navigate-right_16x16.png") no-repeat center center;
+    width: 12px;
+    height: 12px;
+}
+
+#img-prev-comment{
+    background: url("../../../images/navigate-left_16x16.png") no-repeat center center;
+    width: 12px;
+    height: 12px;
+}
+#comments-counter{
+    float: left;
+    /*border: 1px solid yellow; */
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    width: 50px;
+    text-align: center;
+
+    background-color: #006666;
+
+    -webkit-border-radius:8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.comment-counter{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    /*margin-left:3px;
+    margin-right: 3px;*/
+}
+
+
+#comment{
+    display: block;
+    border-top:1px solid #afeeee;
+    width:95%;
+    height: 63px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+.comment-text{
+/*    border: 1px solid green;*/
+    position: absolute;
+    width: 100%;
+    height: 75px;
+}
+
+#comment-text{
+    resize: none;
+    width: 98%;
+    height: 66px;
+}
+#comment-write-controls{
+    border-top:1px solid #afeeee;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 85px;
+
+}
+span#left-comment-symbols{
+    position: relative;
+    top: 8px;
+    float: left;
+    font-size: smaller;
+}
+.comment-btn{
+    position: relative;
+    float: right;
+    width: 110px;
+    text-align: center;
+    /*left: 730px;*/
+    color: #afeeee;
+    font-size: smaller;
+    /*border: 1px solid #afeeee;*/
+    /*background-color: #006666;#006400;*/
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px #447777;
+}
+.comment-btn:hover{
+    color: #afeeee;
+    box-shadow: 0 0 3px 1px #afeeee;
+}
+
+/*****************************************/
+/*                animations             */
+/*****************************************/
+.prev-hide{
+    animation: left-to-right-hide 1s;
+    -webkit-animation: left-to-right-hide 1s;
+}
+.prev-show{
+    animation: left-to-right-show 100ms;
+    -webkit-animation: left-to-right-show 100ms;
+}
+@keyframes left-to-right-hide
+{
+    from {left: 0px;}
+    to   {left: -1000px;}
+}
+@-webkit-keyframes left-to-right-hide
+{
+    from {left: 0px;}
+    to   {left: -1000px;}
+}
+@keyframes left-to-right-show
+{
+    from {left: 1000px;}
+    to   {left: 0px;}
+}
+@-webkit-keyframes left-to-right-show
+{
+    from {left: 1000px;}
+    to   {left: 0px;}
+}

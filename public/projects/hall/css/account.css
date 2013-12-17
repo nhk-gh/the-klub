@@ -1,0 +1,92 @@
+
+#login_form, #register_form, #logout_form, #edit-profile-form, #reminder-form{
+    padding:15px;
+
+    /* fallback
+    background-color: #1a82f7;
+    background: url(images/linear_bg_2.png);
+    background-repeat: repeat-x; *, #2F2727, #1a82f7);
+
+
+    /*width:350px;
+    background-color:#006666;
+    border:2px solid #333;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #ccc;*/
+ }
+.login_title{
+    border-bottom: 1px solid lightgray;
+    margin-left:auto;
+    margin-right:auto;
+    width: 98%;
+    height: 20px;
+}
+
+.login_title span{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.login_cancel{
+    /* border: 1px solid red;*/
+    background :url("../images/close-white.png") no-repeat center center;
+    position: relative;
+    float:right;
+    top: 0px;
+    width:15px;
+    height: 15px;;
+}
+#background-img{
+    background: url('../../../images/hall/gentleman-club-concept-2.jpg') no-repeat center center;
+    opacity: 0.2;
+    z-index: -1;
+}
+fieldset{
+    margin-top: 20px;
+}
+
+.fields_container{
+    margin-left: 5px;
+    margin-right: 5px;
+    /*border: 1px solid orange;*/
+}
+
+.login_label{
+    margin-top: 10px;
+    display: inline-block;
+}
+.login_input{
+    width:98%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 10px;
+}
+
+input[type=submit]{
+    float:right;
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.login_misc{
+    float: left;
+    margin-top: 20px;
+}
+
+input[type=radio]{
+    margin-left: 5px;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+
+label[for=radio1], label[for=radio2]{
+    margin-left: 15px;
+}
+
+#country-r option, #country-e option{
+    display:block;
+}

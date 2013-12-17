@@ -1,0 +1,70 @@
+<!--input(type="text", name="updateid", value=photo._id, style="visibility:hidden")
+input(type="text", name="location", id='location', style="visibility:hidden")-->
+
+<div class="content" ng-style="colors()" ng-init="initEditPhoto()">
+    <div id="add-photo-title" class="centered">
+        <span> Add photo </span>
+    </div>
+
+
+    <div id="add-photo-params" class="centered">
+        <div id="edited-frame">
+            <img id="edit-preview" ng-src=" {{ photo4edit.link2thumb }}"/>
+        </div>
+
+        <form id="upload-form">
+            <div ng-show="progressVisible">
+                <div class="percent">{{progress}}%</div>
+                <div class="progress-bar">
+                    <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+                </div>
+            </div>
+
+            <div id="selected-photo-params">
+                <label for="shortname"> Name </label>
+                <input type="text" name="shortname" id="shortname" uploadedid="{{ photo4edit._id }}"
+                       value="{{ photo4edit.photoname }}" style="text-indent: 10px;"
+                       onkeyup="angular.element(this).scope().shortNameKeyUp(this)"/>
+
+                <br/>
+                <br/>
+                <label style="display:inline"> Select genre(s) </label>
+
+                <!--genre-list></genre-list-->
+                <div id="genre-list">
+                    <div id="genre-list-container">
+                        <div class="genre-list-option" ng-repeat="genre in genres">
+                            <input type="checkbox" name="genres" id="{{ genre.name }}" class="genre-checkbox"
+                                   value="{{ genre.name }}" genre-list />
+                            <label for="{{ genre.name }}">
+                                <span>{{ genre.name }}</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div id="new-genre-container">
+                        <div>
+                            <label for="new-genre" style="display:inline"> New genre (fifteen symbols max.):</label>
+                            <input type="text" name="new-genre" id="new-genre" maxlength=15
+                                   pattern="[a-zA-Z1-9]{15}" title="Fifteen symbols max."
+                                   placeholder="Fifteen symbols max." ng-model="newGenreName"/>
+                            <a id="new-genre-anchor" href="#" class="toggle-enable" disabled ng-click="newGenre()"> Create</a>
+                        </div>
+                    </div>
+
+                    <div id="error-message" ng-show="showNewGenreError" > <!--class="invisible"-->
+                        <span> Genre name: one word (letters only) fifteen symbols max.!</span>
+                    </div>
+                </div>
+                <!-- -->
+
+                <br/>
+                <br/>
+                <div id="submit">
+                    <input klb-button type="submit" value="Edit" ng-click="editFile()"/>
+                    <!--div klb-button id="invisible"  ></div-->
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

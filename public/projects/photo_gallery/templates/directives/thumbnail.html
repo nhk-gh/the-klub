@@ -1,0 +1,19 @@
+<div>
+    <div class="thumb_frame_content" >
+        <div class="thumb-photo-menu" name="{{ author }}" id="{{ photoid }}">
+            <div class="photo-trash">
+                <a id="rrr" class="photo-trash-anchor" href="#" title="Delete photo">
+                    <img ng-src="./images/symbol-delete-icon-16x16.png"/>
+                </a>
+            </div>
+        </div>
+
+        <a title="{{ photoname }}" ng-href="/singlephoto?viewphoto='Single'&id={{ photoid }}">
+            <img class="thumbnail" ng-src="{{ link2thumb }}" exif='true' resizable-thumb/>
+        </a>
+
+    </div>
+
+    <div class="thumb_name">{{ photoname }}</div>
+
+</div>

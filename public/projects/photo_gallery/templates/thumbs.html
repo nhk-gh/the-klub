@@ -1,0 +1,36 @@
+<div id="thumbs_wrapper" ng-init="initThumbs()" ng-style="colors()">
+    <div id="thumbs-bullet"></div>
+
+    <div id="thumbs_description" class="centered">
+        <div id="thumbs-gallery-name">
+            <span title>{{ gallery }}</span>
+        </div>
+
+        <nav>
+            <div id="nav-content" class="centered">
+
+                <div id="next-page" ng-show="enableThumbNextBtn()"  ng-class="transparateThumbNextBtn()"
+                     title="Next page" ng-click="nextPage()">
+                </div>
+
+                <div id="pages">
+                    <span id="current-page-span"> {{ currentPage }} </span>
+                    <span>/</span>
+                    <span id="total-pages">{{ totalPages }}</span>
+                </div>
+
+                <div id="prev-page" ng-show="enableThumbPrevBtn()" ng-class="transparateThumbPrevBtn()"
+                     title="Prev. page" ng-click="prevPage()">
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div id="thumbs_container" class="centered">
+        <div class="thumb_frame" ng-repeat="thumb in thumbs">
+            <thumbnail author="{{ thumb.author }}" photoid="thumb._id"
+                       photoname="thumb.photoname" link2thumb="thumb.link2thumb"/>
+        </div>
+    </div>
+</div>

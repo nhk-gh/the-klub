@@ -1,0 +1,134 @@
+
+/************************************/
+/*
+/*  gallery
+/*
+/***********************************/
+#wallpaper{
+    position: relative;
+
+    min-height: 800px;
+    width:100%;
+    height: 100%;
+    background-color: #003333; /*darksl;ategr #809a9a;/*ey */
+
+    /*-moz-border-radius:60px;
+    -webkit-border-radius:60px;
+    border-radius: 350px;*/
+}
+
+#wallpaper img{
+    /*flow: right;*/
+    position: absolute;
+    left:5%;
+    top:5%;
+    width: 90%;
+    height: 90%;
+
+    -moz-border-radius:5%;
+    -webkit-border-radius:5%;
+    border-radius: 5%;
+
+    -moz-box-shadow: 0 0 5px 2px #ccc;
+    -webkit-box-shadow: 0 0 5px 2px #ccc;
+    -o-box-shadow: 0 0 5px 2px #ccc;
+    box-shadow: 0 0 95px 20px #ccc;
+
+    opacity: 0.5;
+}
+
+/************************************/
+/*
+/*  left side bar
+/*
+/***********************************/
+#left-side-bar
+{
+    margin-right: 2px;
+    /*width:auto;200px;*/
+    min-height:796px;
+    float:left;
+
+}
+#selectable-tags
+{
+    /*min-height: 200px;*/
+    font-size: 14px;
+}
+.accordion-addon{
+    position: absolute;
+    left:5%;
+    top:5%;
+    width: 90%;
+    height: 90%;
+}
+.accordion{
+    display: block;
+    width:95%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+}
+.accordion-group{
+    border:1px solid #afeeee;
+}
+.accordion-toggle{
+    color: #afeeee;
+    /*text-align: center;*/
+}
+
+.tag-item{
+    display:inline-block;
+    /*padding: 0px;*/
+    border-right: 1px solid gray;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+a.tag-anchor{
+    color:#afeeee;
+}
+a.tag-anchor:hover{
+    /*color: #ff00ff;*/
+}
+/*
+#site-info{
+    height:auto;
+    min-height: 100px;
+    font-size: 12px;
+    color: #afeeee;
+    position:absolute;
+    top:550px;
+}
+.info{
+    font-size: 12px;
+    margin-left: 5px;;
+}
+.short-hr{
+    background-color: #afeeee;
+    noshade:"noshade"
+    border-width:0px;
+    height: 1px;
+}
+
+#total-photos, #total-authors{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#site-critisism{
+    display:inline-block;
+    position: relative;
+    float: left;
+}
+
+#site-critisism img{
+    width: 48px;
+    height: 48px;
+    position:relative;
+    float:left;
+    margin-left: 20px;
+}
+#site-critisism p{
+    position:relative;
+    margin-left: 40px;
+    color: gainsboro;
+}
+*/

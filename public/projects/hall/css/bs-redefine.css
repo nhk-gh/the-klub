@@ -1,0 +1,155 @@
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]{
+    height: 14px;
+}
+
+.gallery-dialog{
+    /* bootstraps .modal */
+    position: absolute;/*fixed;*/
+    top: 15%;
+    left: 50%;
+    z-index: 1050;
+    width: 560px;
+    margin-left: -280px;
+
+    /* fallback */
+    background-color: #003333;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#003333), to(#00cccc));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #003333, #00cccc);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #003333, #00cccc);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #003333, #00cccc);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #003333, #00cccc);
+
+    border: 2px solid #004444;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #ccc;
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.gallery-dialog a{
+    color: #0044ff;/*#003333;*/
+}
+.gallery-dialog a:hover{
+    color: white;
+}
+.gallery-backdrop{
+    /* bootstraps .modal-backdrop */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #003333;
+    opacity:0.9;
+    filter: alpha(opacity=90);
+}
+.hall-dialog{
+    /* bootstraps .modal */
+    position: absolute;/*fixed;*/
+    top: 15%;
+    left: 50%;
+    z-index: 1050;
+    width: 560px;
+    margin-left: -280px;
+    color: sandybrown;
+
+    /* fallback */
+    background-color: #3f2a19;/*5c3a1f;  */
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3f2a19), to(saddlebrown));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #3f2a19, saddlebrown);
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #3f2a19, sandybrown);
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #3f2a19, sandybrown);
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #3f2a19, sandybrown);
+
+    border: 2px solid #3f2a19;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    outline: none;
+
+    -moz-box-shadow: 0 0 50px #ccc;
+    -webkit-box-shadow: 0 0 50px #ccc;
+    box-shadow: 0 0 50px #ccc;
+
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.hall-dialog a{
+    color: khaki;/*#3f2a19;*/
+}
+.hall-dialog a:hover{
+    color: white;
+}
+.hall-backdrop{
+    /* bootstraps .modal-backdrop */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #2e1f14;
+    opacity:0.9;
+    filter: alpha(opacity=90);
+}
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    *zoom: 1;
+}

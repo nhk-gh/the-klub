@@ -1,0 +1,15 @@
+<div>
+    <div class="split">
+        <span class="title"> Welcome, {{ titleBar.logged.firstname }}</span>
+        <!--span style="margin-left: 5px"></span-->
+
+        <ul>
+            <li hor-menu-item>
+                <a href="#" ng-click='accountDialog("profile")'  ng-style="linkColor()"> Edit profile</a>
+            </li>
+            <li hor-menu-item>
+                <a href="#" ng-click='accountDialog("logout")'  ng-style="linkColor()"> Log out</a>
+            </li>
+        </ul>
+    </div>
+</div>

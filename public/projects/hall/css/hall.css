@@ -1,0 +1,131 @@
+#hall{
+    background: url('../../../images/hall/gentleman-club-concept-2.jpg') no-repeat center center;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+
+    -moz-box-shadow: 0 0 150px #070707;
+    -webkit-box-shadow: 0 0 150px #070707;
+    -o-box-shadow: 0 0 150px #070707;
+    box-shadow: 0px 0px 30px #070707;
+
+    z-index: -1;
+
+    width:100%;
+    height: 100%;
+    position: relative
+}
+#hall div,#hall div img{
+    height: 100%;
+    width: 100% ;
+    display: inline-block;
+    position: relative;
+}
+#subtitle{
+    /*min-height: 20px;
+    margin-top: 0px;
+    background-color: red;*/
+    height:20%;
+    position: relative;
+    border-bottom: 1px solid #afeeee;
+    width: 100%;
+    display: inline-block;
+}
+
+#subtitle-menu{
+    position: relative;
+    margin-left: 10px;
+}
+@-webkit-keyframes attention{
+    0%   {-webkit-transform: translateX(0%);}
+    10% {-webkit-transform: translateX(3%) skew(-50deg);}
+    40%, 48%, 56%{-webkit-transform: translateX(-40%);}
+    44%, 52%, 60% {-webkit-transform: translateX(-38%);}
+    70% {-webkit-transform: skew(50deg);}
+    90% {-webkit-transform: skew(25deg);}
+    100% {-webkit-transform: translateX(0%) skew(0deg);}
+}
+@-moz-keyframes attention{
+    0%   {-moz-transform: translateX(0%);}
+    10% {-moz-transform: translateX(3%) skew(-50deg);}
+    40%, 48%, 56%{-moz-transform: translateX(-40%);}
+    44%, 52%, 60% {-moz-transform: translateX(-38%);}
+    70% {-moz-transform: skew(50deg);}
+    90% {-moz-transform: skew(25deg);}
+    100% {-moz-transform: translateX(0%) skew(0deg);}
+}
+@-o-keyframes attention{
+    0%   {-o-transform: translateX(0%);}
+    10% {-o-transform: translateX(3%) skew(-50deg);}
+    40%, 48%, 56%{-o-transform: translateX(-40%);}
+    44%, 52%, 60% {-o-transform: translateX(-38%);}
+    70% {-o-transform: skew(50deg);}
+    90% {-o-transform: skew(25deg);}
+    100% {-o-transform: translateX(0%) skew(0deg);}
+}
+@keyframes attention{
+    0%   {transform: translateX(0%);}
+    10% {transform: translateX(3%) skew(-50deg);}
+    40%, 48%, 56%{transform: translateX(-40%);}
+    44%, 52%, 60% {transform: translateX(-38%);}
+    70% {transform: skew(50deg);}
+    90% {transform: skew(25deg);}
+    100% {transform: translateX(0%) skew(0deg);}
+}
+#subtitle-info {
+    text-align: center;
+    /*font-style: italic;*/
+    font-size: larger;
+    color:khaki;
+    display: inline-table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    -webkit-animation-name: attention;
+    -webkit-animation-duration: 5s;
+
+    -moz-animation-name: attention;
+    -moz-animation-duration: 5s;
+
+    -o-animation-name: attention;
+    -o-animation-duration: 5s;
+
+    animation-name: attention;
+    animation-duration: 5s;
+}
+.hall-menu-h{
+    list-style-type: none;
+    overflow: visible;
+    display: inline-block;
+    margin: 0px;
+}
+.hall-menu-h li{
+    float: left;
+    height: 20px;
+    /*border-right: 1px solid sandybrown;*/
+    padding: 0 10px;
+    margin-top: 8px;
+}
+
+.hall-menu-h li a{
+    color:sandybrown ;
+    text-decoration: none;
+}
+/*
+.hall-menu-h li:first-child{
+    color:sandybrown ;
+    text-decoration: none;
+    background: -webkit-radial-gradient(50% 10%, closest-corner, royalblue, #070707);
+}
+.hall-menu-h li:last-child{
+    color:sandybrown ;
+    text-decoration: none;
+    background: -webkit-radial-gradient(50% 50%, closest-corner, deepskyblue, transparent);
+}
+.hall-menu-h li a:hover{
+    color:sandybrown !important;*/
+/*    background: -webkit-radial-gradient(50% 10%, closest-corner, yellow, transparent);
+    background: -moz-radial-gradient(50% 10%, closest-corner, deepskyblue, #070707);
+    background: -ms-radial-gradient(50% 10%, closest-corner, deepskyblue, #070707);       */
+/*}*/
+
