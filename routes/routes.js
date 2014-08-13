@@ -138,8 +138,8 @@ var initDB = function(){
 
                 populateCollection("authors",d) ;
                 populateCollection("genres",d);
-                //populateCollection("photos", d);
-                //populateCollection("comments", d);
+                populateCollection("photos", d);
+                populateCollection("comments", d);
             }
         });
     }
@@ -618,6 +618,7 @@ exports.singlephoto = function(req, res){
         // the results array will equal ['one','two'] even though
         // the second function had a shorter timeout.
         if (err){
+          $log.warn(err);
             //res.render('singlephoto', {title: "", triad: triad, comments:results[1], loggedUser:req.session.user});
         }
         else{
@@ -639,6 +640,7 @@ exports.singlephoto = function(req, res){
 exports.singlePhoto1 = function(req, res){
     var colName = "photos"; // req.query.selectionMode;
     var query, options={};
+    var phID, curPhoto, totalPhotos;
 
     if (req.session.collectionType == "genres")
         query = {'genres.name':req.session.gallery };
@@ -647,7 +649,7 @@ exports.singlePhoto1 = function(req, res){
 
     options = {sort:{addeddate: -1}};
 
-    async.parallel([
+    async.series([
         function(callback){
             photodb.collection(colName, function(err, collection){
                 if (err){
@@ -689,11 +691,24 @@ exports.singlePhoto1 = function(req, res){
                                 var ind = -1;
                                 var triad = [];
 
-                                for (var i=0; i<items.length; i++){
-                                    if (items[i]._id.id === new ObjectID(req.query.id).id){
-                                        ind = i;
-                                        break;
+                                switch (req.query.id)
+                                {
+                                  case '-1':  //first photo
+                                    ind = 0;
+                                    break;
+
+                                  case '-999': // last photo
+                                    ind = items.length-1;
+                                    break;
+
+                                  default:
+                                    for (var i=0; i<items.length; i++){
+                                        if (items[i]._id.id === new ObjectID(req.query.id).id){
+                                            ind = i;
+                                            break;
+                                        }
                                     }
+                                    break;
                                 }
 
                                 if (ind == -1){
@@ -709,6 +724,9 @@ exports.singlePhoto1 = function(req, res){
                                     }
 
                                     triad[1] = items[ind];
+                                    phID = items[ind]._id;
+                                    curPhoto = ind + 1;
+                                    totalPhotos = items.length;
 
                                     if (items[ind+1] === undefined){
                                         triad[2] = null;//items[ind];//({_id:0, link: "empty"}
@@ -733,7 +751,8 @@ exports.singlePhoto1 = function(req, res){
                     callback(err);
                 }
                 else {
-                    c.find({'photoid': req.query.id}, {sort:{date: -1}}).toArray(function (err, items) {
+                    //c.find({'photoid': req.query.id}, {sort:{date: -1}}).toArray(function (err, items) {
+                    c.find({'photoid': phID.toString()}, {sort:{date: -1}}).toArray(function (err, items) {
                         if (err){
                             console.log(req.query.viewphoto + "photo (6): " + err);
                             callback(err);
@@ -795,8 +814,9 @@ exports.singlePhoto1 = function(req, res){
                         results[0][1].link = path.basename(target_path_small);
                         req.session.tempImg =  target_path_small;
                     }
-
-                    res.send({photos: results[0], comments:results[1], loggedUser:req.session.user});
+                    //console.log(results[0]);
+                    res.send({photos: results[0], comments:results[1], loggedUser:req.session.user,
+                              current:curPhoto, total:totalPhotos});
                 });
         }
     });

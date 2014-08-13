@@ -1,7 +1,7 @@
 "use strict";
 
 theKlubApp.controller("AddPhotoController",
-    function AddPhotoController($scope, $log, $http, $timeout, $route,
+    function AddPhotoController($scope, $log, $http, $timeout, $route, $rootScope,
                                 addPhotoService, singlePhotoService, layoutService){
 
         layoutService.titleBar.foregroundColor = '#afeeee';
@@ -22,6 +22,8 @@ theKlubApp.controller("AddPhotoController",
                    $scope.author = data.loggedUser;
 
                    addPhotoService.currentMode = "add";
+
+                   $rootScope.$broadcast('BREADCRUMB_EVT', {type:'addphoto', param: null});
 
                }, function(status){
 
@@ -96,7 +98,7 @@ theKlubApp.controller("AddPhotoController",
         $scope.uploadFile = function() {
             var fd = new FormData();
             //$scope.files = addPhotoService.photos;
-            //$log.warn($scope.files) ;
+            $log.warn($scope.files) ;
 
             for (var i in addPhotoService.photos) {
                 fd.append("photo", addPhotoService.photos[i]);

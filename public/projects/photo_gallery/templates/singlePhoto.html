@@ -2,20 +2,42 @@
 <div id="single-wrapper" ng-init="initSinglePhoto()" >
     <div id="photo-container" class="centered">
         <div id="photo-title" class="centered">
-            <span id="photo-name" text="getPhotoName()" >{{ photos[1].photoname }}</span>
+            <!--span id="photo-name" text="getPhotoName()" >{{ photos[1].photoname }}</span>
             <span style='margin-left:15px'> by </span>
-            <a id="photo-author" href="#" title="View all photos of the author"
+            <a id="photo-author" title="View all photos of the author"
                ng-href="/genre?selectionMode=authors&gallery={{ photos[1].author }}">
                 {{ photos[1].author }}
-            </a>
+            </a-->
+            <div id="single-photo-nav">
+                <a id="nav-start" href="#" title="First photo" scroll-image ng-style="showPrevScroll()">
+                    <img ng-src="../images/navigate-start_16x16.png"/>
+                </a>
+                <a id="nav-prev" href="#" title="Previous photo" scroll-image ng-style="showPrevScroll()">
+                    <img ng-src="../images/navigate-left_16x16.png"/>
+                </a>
 
-            <exif-data class="exif-data" popover="{{camera}}" popover-trigger="mouseenter"
-                    popover-placement="right"> Exif
-                <!--div>
-                    {{camera}}
-                </div-->
-            </exif-data>
+                <div id="photos-counter">
+                    <span>{{ currentPhotoInd }}</span>
+                    <span>/</span>
+                    <span>{{ totalPhotos }}</span>
+                </div>
 
+                <a id="nav-next" href="#" title="Next photo" scroll-image ng-style="showNextScroll()">
+                    <img ng-src="../images/navigate-right_16x16.png"/>
+                </a>
+                <a id="nav-end" href="#" title="Last photo" scroll-image ng-style="showNextScroll()">
+                    <img ng-src="../images/navigate-end_16x16.png"/>
+                </a>
+            </div>
+
+            <div id="exif-wrapper">
+                <exif-data class="exif-data" popover="{{camera}}" popover-trigger="mouseenter"
+                        popover-placement="right"> Exif
+                    <!--div>
+                        {{camera}}
+                    </div-->
+                </exif-data>
+            </div>
             <div id="single-photo-menu" ng-show="enableSinglePhotoMenu()" >
                 <a id="photo-trash" href="#" title="Delete photo" ng-click="deletePhoto()">
                     <img ng-src="../images/symbol-delete-icon-16x16.png"/>

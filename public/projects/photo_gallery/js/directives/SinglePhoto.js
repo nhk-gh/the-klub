@@ -137,7 +137,7 @@ theKlubApp.directive('viewPhoto', function () {
                     for (i = 0; i < img.length; i++) {
                         resizePhoto(img[i]);
                         $('.klb-fit-screen').klbFitScreen();
-                        img.fadeIn(500);
+                        //img.fadeIn(500);
                     }
                 }
             }
@@ -155,11 +155,11 @@ theKlubApp.directive('scrollImage', function () {
                 $(this).css({"filter": "alpha(opacity=100)"});  /* For IE8 and earlier */
             })
             .on("mouseleave", function(){
-                $(this).css({"opacity": 0.2});
-                $(this).css({"filter": "alpha(opacity=20)"});  /* For IE8 and earlier */
+                $(this).css({"opacity": 0.5});
+                $(this).css({"filter": "alpha(opacity=50)"});  /* For IE8 and earlier */
             })
             .on("click", function(){
-                $("#single-photo-content").fadeOut(600);
+                //$("#single-photo-content").fadeOut(600);
 
                 /*$("#photo-frame").append('<img id="single-photo-content" class="klb-fit-screen single-photo"' +
                     'ng-src="{{ photos[1].link }}"  view-photo exif="true"/>"');

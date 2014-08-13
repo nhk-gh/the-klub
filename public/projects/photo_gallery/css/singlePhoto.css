@@ -8,7 +8,9 @@
     float:left;
     background: #003333;
 }
-
+#single-wrapper a {
+    color: white;
+}
 #photo-container{
     /*background-color: #002222;/* darkslategrey
     min-height: 600px;*/
@@ -19,6 +21,8 @@
     display:block;
     /*border: 1px solid red;*/
 }
+
+
 #photo-title{
     position: relative;
     background-color: inherit;
@@ -26,6 +30,7 @@
     font-size: small;
     display: block;
 }
+/*
 #photo-name{
     position: relative;
     float: left;
@@ -36,15 +41,49 @@
     margin-left: 10px;
     top:2px;
 }
+*/
+#single-photo-nav {
+    position: relative;
+    display: inline-block;
+    width: 33.3333%;
+    text-align: center;
+}
 
-.exif-data{
-    margin-left:205px;
+#single-photo-nav > a {
+    opacity:0.5;
+    filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+
+#photos-counter {
+    display: inline-block;
+    position: relative;
+    /*top: 1px;
+    width: 50px; */
+    text-align: center;
+
+    /*background-color: #006666;*/
+
+    -webkit-border-radius:8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+/*
+.vertical-line {
+    width: 1px;
+    heigth: 100%;
+    border-left: 1px solid #afeeee;
+}
+*/
+#exif-wrapper{
+    width: 33.3333%;
+    float: left;
     display: inline-block;
 }
 
 #single-photo-menu{
     display: inline-block;
     float:right;
+/*    width: 33.3333%;*/
 }
 a#photo-trash{
     display: inline-block;
@@ -115,8 +154,8 @@ a#photo-add-genres:hover{
     float: left;
 }
 #prev-photo, #next-photo{
-    opacity:0.2;
-    filter:alpha(opacity=20); /* For IE8 and earlier */
+    opacity:0.5;
+    filter:alpha(opacity=50); /* For IE8 and earlier */
     position:relative;
 }
 /*
@@ -238,6 +277,7 @@ span#comment-date{
     width: 12px;
     height: 12px;
 }
+
 #comments-counter{
     float: left;
     /*border: 1px solid yellow; */

@@ -1,7 +1,7 @@
 "use strict";
 
 theKlubApp.controller('SinglePhotoController',
-    function SinglePhotoController($scope, $log, $route, $location, singlePhotoService, userService){
+    function SinglePhotoController($scope, $log, $route, $location, $rootScope, singlePhotoService, userService){
 
         function ex(){
             var oImg = document.getElementById("single-photo-content");
@@ -42,9 +42,14 @@ theKlubApp.controller('SinglePhotoController',
             $scope.prevPhotoID = data.photos[0] ? data.photos[0]._id : null;
             $scope.comments = data.comments;
             $scope.currentComment = 0;
+            $scope.currentPhotoInd = data.current;
+            $scope.totalPhotos = data.total;
 
+            //$log.warn(data.photos[1]);
             singlePhotoService.photos = data.photos;
 
+            $rootScope.$broadcast('BREADCRUMB_EVT', {type:'single',
+              param:{photoname:$scope.photos[1].photoname, authorname: $scope.photos[1].author}});
             /*
             $scope.camera = singlePhotoService.camera;
             $log.info("$scope.camera  = " + $scope.camera);
@@ -52,6 +57,7 @@ theKlubApp.controller('SinglePhotoController',
         }
 
         $scope.initSinglePhoto = function() {
+            $log.info($route.current.params)
             singlePhotoService.downloadPhoto($route.current.params)
                 .then(function(data){
                     setScopeData(data);
@@ -66,11 +72,14 @@ theKlubApp.controller('SinglePhotoController',
         $scope.$on("getPhoto", function(evnt, param){
             var id;
 
-            if  (param === "prev-photo") {
+            if  ((param === "prev-photo") || (param === "nav-prev")) {
                 id = $scope.prevPhotoID;
-            }
-            else {
+            } else if ((param === "next-photo") || (param === "nav-next")) {
                 id = $scope.nextPhotoID;
+            } else if (param === "nav-end") {
+                id = '-999';
+            } else if (param === "nav-start") {
+                id = '-1';
             }
 
             if (!$scope.$$phase){

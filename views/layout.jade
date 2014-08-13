@@ -1,4 +1,4 @@
-doctype 5
+doctype html
 html(ng-app='theKlubApp')
     head
 
@@ -18,7 +18,7 @@ html(ng-app='theKlubApp')
         //script(src='/klub_libs/split_btn/klub-splitbtn.js')
         //link(rel="stylesheet", href='/klub_libs/split_btn/klub-split.css')
 
-        //script(src='/projects/hall/js/layout.js')
+        script(src='/projects/hall/js/layout.js')
 
         script(src='/projects/hall/js/klubApp.js')
         script(src='/projects/hall/js/controllers/LayoutController.js')
@@ -29,6 +29,7 @@ html(ng-app='theKlubApp')
         script(src='/projects/hall/js/directives/KlbButton.js')
         script(src='/projects/hall/js/directives/KlbAfterError.js')
         script(src='/projects/hall/js/directives/PasswordReminder.js')
+        script(src='/projects/hall/js/directives/GalleryBreadcrumb.js')
         //script(src='/projects/hall/js/directives/CountriesList.js')
 
         script(src='/projects/photo_gallery/js/controllers/GalleryController.js')
@@ -103,16 +104,27 @@ html(ng-app='theKlubApp')
             nav#subtitle(ng-style="colors()")
                 div(ng-show="showGalleryMenu()")
                     //select-gallery(link="link", tip="tip", gallery="selectGallery()")
-                    a(id="subtitle-menu", title="{{ tip }}", href="/gallery")
+                    //a(id="subtitle-menu", title="{{ tip }}", href="/gallery")
                       img(id="invitation-img", ng-src="../../../../images/k-menu-edit-icon-16x16-1.png")
 
-                    #subtitle-info {{ titleBar.subTitle }}
+                    //#subtitle-info {{ titleBar.subTitle }}
+
+                    ol(id='bread-crumb', gallery-breadcrumb)
+                        li
+                            a(id='galleries', href='/gallery') Galleres
+                        li
+                            a(id='thumbs') / {{ gallery }}
+                        li / {{ photo }} ( by
+                            a(title="View all photos of the author") {{ author }}
+                            span )
 
                 ul.hall-menu-h(ng-show="showHallMenu()")
                     li(hor-menu-item)
                         a(id='gallery', href='/gallery') Photo Gallery
-                    li(hor-menu-item)
+                    //li(hor-menu-item)
                         a(id='library', href='/proba') Reading Room
+                    li(hor-menu-item)
+                        a(id='library', href='http://www.theklub.info:9000') Reading Room
                     li(hor-menu-item)
                         a(id='eclectic', href='http://eclecticparallels.com/', target="_blank") Eclectic Parallels
 

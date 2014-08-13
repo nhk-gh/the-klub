@@ -23,6 +23,7 @@
     /*background-color: #003333; #809a9a;/*#2f4f4f;/* darkslategrey */
     border-bottom: 2px solid #afeeee;
 }
+
 #thumbs-gallery-name{
     display: inline-block;
     float:left;
@@ -30,6 +31,7 @@
     position: relative;
     top: 4px;
 }
+
 #thumbs_description nav{
     /*border:1px solid #afeeee;*/
     width:300px;

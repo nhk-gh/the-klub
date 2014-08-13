@@ -1,7 +1,7 @@
 "use strict";
 
 theKlubApp.controller('ThumbsController',
-    function ThumbsController($scope, $log, thumbsService, layoutService, $route){
+    function ThumbsController($scope, $log, $rootScope, thumbsService, layoutService, $route){
 
         $scope.initThumbs = function(){
             //$log.warn($route.current.params);
@@ -11,8 +11,8 @@ theKlubApp.controller('ThumbsController',
                     $scope.currentPage = data.page;
                     $scope.totalPages = data.pages;
                     $scope.thumbs = data.thumbs || [];
-
-                    //$log.warn(data);
+                    $log.info($scope.thumbs)
+                    $rootScope.$broadcast('BREADCRUMB_EVT', {type:'thumb', param:$route.current.params});
 
                 }, function(status){
                     $log.warn(status);

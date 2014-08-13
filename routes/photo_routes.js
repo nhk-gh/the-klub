@@ -148,9 +148,9 @@ exports.addPhoto = function(req, res){
                                                     gns.push({name:req.body.genres});
                                                 }
                                                 */
-                                                if (req.body[p.name].trim() != ""){
+                                                if (req.body[p.name].trim() != "") {
                                                     var temp = req.body[p.name].split(',');
-                                                    for(var k=0; k < temp.length; k++){
+                                                    for(var k=0; k < temp.length; k++) {
                                                         gns.push({name:temp[k]});
                                                     }
                                                 }

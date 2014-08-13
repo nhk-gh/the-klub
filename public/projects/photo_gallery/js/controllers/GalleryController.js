@@ -1,7 +1,7 @@
 "use strict";
 
 theKlubApp.controller('GalleryController',
-    function GalleryController($scope, $log, $timeout, $location, layoutService, galleryService){
+    function GalleryController($scope, $log, $timeout, $location, $rootScope, layoutService, galleryService){
 
         layoutService.titleBar.promoMsg = "Photo Gallery";
         layoutService.titleBar.promoImg = '/images/images-transp.png';
@@ -64,6 +64,7 @@ theKlubApp.controller('GalleryController',
 
                 });
 
+            $rootScope.$broadcast('BREADCRUMB_EVT', null);
 
             getRandomPhoto(0);
         })();

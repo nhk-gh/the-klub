@@ -18,15 +18,45 @@ $(document).ready(function(){
     }
     */
 
-    /*
-    //WHAT WOULD HAPPEN IN THIS EXAMPLE ?
 
+    //WHAT WOULD HAPPEN IN THIS EXAMPLE ?
+    /*
     var myFn = function(){
         alert("Surprise !");
     } // <-------------------- NO SEMOCOLON
 
     (function(){
 
-    })();
-    */
+    })();  */
+  /*
+  var list = [1,2,3,4,5,6,7,8,9];
+  list = list.sort(function(){return Math.random() - 0.5});
+  alert(list);   */
+
+ /*
+  function User(name) {
+    this.name = name;
+  };
+
+  var j = new User('Jack');
+  alert(j.name)
+  */
+  /*
+  Object.prototype.jack = {};
+
+  var a = [1,2,3];
+
+  for ( var number in a ) {
+    alert( number )
+  }   */
+
+ /*
+  function bar(){
+    return foo();
+    foo = 10;
+    function foo() {}
+    var foo = '11';
+  }
+  alert(bar());*/
 });
+

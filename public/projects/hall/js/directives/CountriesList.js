@@ -5,6 +5,7 @@
  * Time: 5:40 PM
  * To change this template use File | Settings | File Templates.
  */
+
 theKlubApp.directive('countrySelect', function ($parse, $log, userService) {
     var countries = [
         "Afghanistan", "Aland Islands", "Albania", "Algeria", "American Samoa", "Andorra", "Angola",
