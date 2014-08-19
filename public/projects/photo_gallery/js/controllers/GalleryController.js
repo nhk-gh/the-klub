@@ -30,7 +30,6 @@ theKlubApp.controller('GalleryController',
             };
         };
 
-
         $scope.tip = "open menu";
 
         $scope.randomPhoto = "/images/BirchThicket.jpg";

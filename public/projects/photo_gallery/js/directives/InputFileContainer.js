@@ -58,7 +58,7 @@ theKlubApp.directive("inputFileContainer", function($log, addPhotoService){
                 _sel.val('0');
                 _sel.change();
                 $("#0").attr("selected", "selected");
-
+        //console.log(fileName);
                 addPhotoService.photos = fileName;
             });
 

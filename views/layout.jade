@@ -84,7 +84,6 @@ html(ng-app='theKlubApp')
                         ul.hall-menu-h
                             li(hor-menu-item)
                                 a(href="#", ng-click='accountDialog("login")', ng-style="linkColor()") Log in
-                                //a(href="#", login-dlg, ng-style="linkColor()") Log in
                             li(hor-menu-item)
                                 a(href="#",ng-click='accountDialog("register")', ng-style="linkColor()") Register
 
@@ -92,7 +91,7 @@ html(ng-app='theKlubApp')
                         div(style="float: left")
                             klb-split
 
-                        .vvv
+                        //.vvv
                             div(style="float:left", ng-show="showGalleryMenu()")
                                 a(href="/addPhoto", ng-style="linkColor()") Add photo
 

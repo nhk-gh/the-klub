@@ -1,6 +1,6 @@
 "use strict";
 
-theKlubApp.factory('layoutService', function(){
+theKlubApp.factory('layoutService', function($http, $q, $log){
     return {
         /* default values */
         titleBar:{
@@ -19,6 +19,21 @@ theKlubApp.factory('layoutService', function(){
         btnBackgrounColor: "saddlebrown",
         btnColor: "khaki",//"#6a4229",
         btnBorder: "1px solid",
-        btnBorderColor: "khaki"
+        btnBorderColor: "khaki",
+
+        deleteAllUserPhotos: function(user){
+          var deferred = $q.defer();
+
+          $http({method:"GET", url:"/deleteAllUserPhotos", params:user}).
+            success(function(data){
+              deferred.resolve(data);
+            }).
+            error(function(data, status){
+              $log.error(' "/deleteAllUserPhotos" error: ' + status);
+              deferred.reject(status);
+            });
+
+          return deferred.promise;
+        }
     }
 });

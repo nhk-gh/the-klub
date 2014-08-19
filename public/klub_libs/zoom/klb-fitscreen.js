@@ -36,7 +36,7 @@
                 }
                 //e.preventDefault();
             });
-
+/*
             me.mouseover(function(){
                 if(iW>oW && iH>oH){
                     me.css('cursor', 'url(../images/zoom_in_24x24.png) 0 0, pointer');
@@ -44,7 +44,7 @@
                     me.css('cursor', 'default');
                 }
             });
-
+*/
             $('body').on('click', '.klb-fit-container', function(){
                 removeBigPhoto();
             });

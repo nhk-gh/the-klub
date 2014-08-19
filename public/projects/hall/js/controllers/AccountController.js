@@ -13,6 +13,9 @@ theKlubApp.controller('accountController',
                     break;
             }
         };
+        $scope.linkColor = function(){
+          return  {color: layoutService.titleBar.linkColor};
+        };
 
         $scope.user = userService.user;
 
@@ -136,6 +139,15 @@ theKlubApp.controller('accountController',
                         });
 
                     break;
+
+                case "deleteall":
+                    dlg.open('/projects/hall/templates/deleteall.html', 'SubmitDeleteAllController')
+                        .then(function(data){
+                            if (data) {
+                              $location.path("/gallery");
+                            }
+                        });
+                    break;
             }
         };
     }
@@ -173,7 +185,6 @@ theKlubApp.controller("SubmitPasswordReminderController",
         };
     }
 );
-
 theKlubApp.controller('SubmitRegisterController',
     function($scope, $log, dialog, userService, accountService ){
 
@@ -280,4 +291,22 @@ theKlubApp.controller('SubmitLogoutController',
             }
         };
     }
+);
+theKlubApp.controller("SubmitDeleteAllController",
+  function($scope, $log, dialog, layoutService ){
+
+    $scope.close = function(param){
+      if (param === null) {
+        dialog.close(null);
+      }
+      else {
+        layoutService.deleteAllUserPhotos(layoutService.titleBar.logged)
+          .then(function(data){
+            dialog.close(true);
+          }, function(status){
+            $log.warn('Error: not all photos deleted! (' + status +')' );
+          });
+      }
+    };
+  }
 );

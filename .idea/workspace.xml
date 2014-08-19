@@ -25,42 +25,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/routes.js">
+      <file leaf-file-name="singlePhoto.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/singlePhoto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="41" selection-start="6496" selection-end="6496" vertical-scroll-proportion="-2.488978" vertical-offset="1842" max-vertical-offset="3540">
-              <folding>
-                <element signature="e#779#4691#0" expanded="false" />
-                <element signature="e#4717#5265#0" expanded="false" />
-                <element signature="e#5319#5392#0" expanded="false" />
-                <element signature="e#5488#5700#0" expanded="false" />
-                <element signature="e#5735#5840#0" expanded="false" />
-                <element signature="e#5877#6495#0" expanded="false" />
-                <element signature="e#6532#8224#0" expanded="false" />
-                <element signature="e#10583#16568#0" expanded="false" />
-                <element signature="e#16611#17990#0" expanded="false" />
-                <element signature="e#18033#23169#0" expanded="false" />
-                <element signature="e#23213#30964#0" expanded="false" />
-                <element signature="e#23847#24758#0" expanded="false" />
-                <element signature="e#31006#32731#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thumbs.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/thumbs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="645">
+            <state line="33" column="81" selection-start="1667" selection-end="1682" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThumbsController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/ThumbsController.js">
+      <file leaf-file-name="galleryHome.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/galleryHome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="37" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+            <state line="11" column="103" selection-start="511" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="singlePhoto.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/css/singlePhoto.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="10" selection-start="847" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="6000">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SinglePhoto.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/directives/SinglePhoto.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="29" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="1694" max-vertical-offset="2670">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="klb-fitscreen.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/klub_libs/zoom/klb-fitscreen.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="klb-fitscreen.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/klub_libs/zoom/klb-fitscreen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="2" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.54545456" vertical-offset="258" max-vertical-offset="2040">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SinglePhotoController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/SinglePhotoController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="49" selection-start="3577" selection-end="3606" vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="4260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="78" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="16665">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPhotoController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/AddPhotoController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="213" column="4" selection-start="7887" selection-end="7887" vertical-scroll-proportion="0.0" vertical-offset="3195" max-vertical-offset="3390">
               <folding />
             </state>
           </provider>
@@ -76,29 +116,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/projects/hall/templates/hall.html" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/css/thumbs.css" />
-        <option value="$PROJECT_DIR$/public/projects/hall/js/layout.js" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/templates/thumbs.html" />
-        <option value="$PROJECT_DIR$/public/projects/hall/templates/directives/breadcrumb.html" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/GalleryController.js" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/AddPhotoController.js" />
-        <option value="$PROJECT_DIR$/public/projects/hall/js/directives/GalleryBreadcrumb.js" />
-        <option value="$PROJECT_DIR$/public/projects/hall/css/hall.css" />
+        <option value="$PROJECT_DIR$/public/projects/hall/js/services/LayoutService.js" />
+        <option value="$PROJECT_DIR$/routes/photo_routes.js" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/directives/SinglePhoto.js" />
+        <option value="$PROJECT_DIR$/public/projects/hall/js/controllers/AccountController.js" />
+        <option value="$PROJECT_DIR$/public/projects/hall/css/klb-split.css" />
+        <option value="$PROJECT_DIR$/public/projects/hall/templates/directives/klbSplit.html" />
+        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/GalleryController.js" />
+        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/directives/InputFileContainer.js" />
         <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/ThumbsController.js" />
-        <option value="$PROJECT_DIR$/routes/routes.js" />
+        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/services/ThumbsService.js" />
+        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/AddPhotoController.js" />
         <option value="$PROJECT_DIR$/public/projects/photo_gallery/templates/singlePhoto.html" />
-        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/SinglePhotoController.js" />
         <option value="$PROJECT_DIR$/public/projects/photo_gallery/css/singlePhoto.css" />
+        <option value="$PROJECT_DIR$/routes/routes.js" />
+        <option value="$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/SinglePhotoController.js" />
+        <option value="$PROJECT_DIR$/public/klub_libs/zoom/klb-fitscreen.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="32" />
-    <option name="width" value="1172" />
+    <option name="y" value="41" />
+    <option name="width" value="1231" />
     <option name="height" value="997" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -149,6 +189,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,7 +218,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -200,40 +241,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="photo_gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheKlub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheKlub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo_gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,15 +318,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="photo_gallery" />
+              <option name="myItemId" value="hall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheKlub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheKlub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,15 +350,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
+              <option name="myItemId" value="klub_libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="photo_gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="zoom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -363,7 +372,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
+              <option name="myItemId" value="klub_libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,25 +387,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lobster" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReadingRoom" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -420,14 +436,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -438,12 +446,16 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
-      <node-js-remote-debug />
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -456,11 +468,11 @@
       <setting name="jsFile" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" working-dir="$PROJECT_DIR$">
-      <browser start="false" url="" with-js-debugger="false" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -477,6 +489,10 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="false" name="hall.html" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:63342/TheKlub/public/projects/hall/templates/hall.html">
@@ -537,15 +553,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="32" width="1172" height="997" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="41" width="1231" height="997" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36009446" sideWeight="0.4995633" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35958904" sideWeight="0.4995633" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28209606" sideWeight="0.6399056" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3175915" sideWeight="0.49960473" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26495016" sideWeight="0.7146119" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28538814" sideWeight="0.49960473" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28471616" sideWeight="0.35582823" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36009446" sideWeight="0.50043666" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28431374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -574,127 +590,105 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="270" />
+      <option name="time" value="271" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/projects/hall/css/hall.css">
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/AddPhotoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="2430" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="4" selection-start="5873" selection-end="5873" vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="2175" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/navigate-left-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/directives/SinglePhoto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="55" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="1440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/services/SinglePhotoService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/async/lib/async.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="28" selection-start="3716" selection-end="3716" vertical-scroll-proportion="0.33274022" vertical-offset="1868" max-vertical-offset="14820" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/directives/thumbnail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/directives/Thumbnail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/singlePhoto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="39" selection-start="990" selection-end="990" vertical-scroll-proportion="-10.458333" vertical-offset="19" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/SinglePhotoController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="33" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="4095">
+        <state line="213" column="4" selection-start="7887" selection-end="7887" vertical-scroll-proportion="0.0" vertical-offset="2897" max-vertical-offset="3390">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/photo_routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="523">
-          <folding>
-            <element signature="e#516#11953#0" expanded="false" />
-            <element signature="e#11994#18057#0" expanded="false" />
-            <element signature="e#18097#18835#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="19" column="37" selection-start="516" selection-end="516" vertical-scroll-proportion="0.5780933" vertical-offset="0" max-vertical-offset="493" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/css/singlePhoto.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="34" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0" vertical-offset="977" max-vertical-offset="5955">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/images/k-menu-edit-icon-16x16-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3457944" vertical-offset="720" max-vertical-offset="1350">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/images/document-construction-icon-48x48.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/ThumbsController.js">
+    <entry file="file://$PROJECT_DIR$/public/images/glossy-3d-blue-orbs2-063-icon-128x128.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/three-tags-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/GalleryController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="37" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.4090909" vertical-offset="225" max-vertical-offset="1320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/thumbs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="645">
+        <state line="18" column="3" selection-start="627" selection-end="627" vertical-scroll-proportion="0.34220532" vertical-offset="90" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/galleryHome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="103" selection-start="511" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="41" selection-start="6496" selection-end="6496" vertical-scroll-proportion="-2.488978" vertical-offset="1842" max-vertical-offset="3540">
-          <folding>
-            <element signature="e#779#4691#0" expanded="false" />
-            <element signature="e#4717#5265#0" expanded="false" />
-            <element signature="e#5319#5392#0" expanded="false" />
-            <element signature="e#5488#5700#0" expanded="false" />
-            <element signature="e#5735#5840#0" expanded="false" />
-            <element signature="e#5877#6495#0" expanded="false" />
-            <element signature="e#6532#8224#0" expanded="false" />
-            <element signature="e#10583#16568#0" expanded="false" />
-            <element signature="e#16611#17990#0" expanded="false" />
-            <element signature="e#18033#23169#0" expanded="false" />
-            <element signature="e#23213#30964#0" expanded="false" />
-            <element signature="e#23847#24758#0" expanded="false" />
-            <element signature="e#31006#32731#0" expanded="false" />
-          </folding>
+        <state line="18" column="78" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/templates/singlePhoto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="81" selection-start="1667" selection-end="1682" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/controllers/SinglePhotoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="49" selection-start="3577" selection-end="3606" vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="3810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/css/singlePhoto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="10" selection-start="847" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="6000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/projects/photo_gallery/js/directives/SinglePhoto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="29" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/klub_libs/zoom/klb-fitscreen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="571">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/klub_libs/zoom/klb-fitscreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="2" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.54545456" vertical-offset="258" max-vertical-offset="2040">
+          <folding />
         </state>
       </provider>
     </entry>

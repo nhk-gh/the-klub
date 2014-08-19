@@ -161,6 +161,7 @@ exports.addPhoto = function(req, res){
                                                         photoname: short,//req.body.shortname == "" ? p.name : req.body.shortname,
                                                         addeddate: Date.now(),
                                                         author:  usr.name,   //usr.username,//
+                                                        username: usr.username,
                                                         link: link_path,
                                                         ratingavr: 0,
                                                         ratingqtty: 0,

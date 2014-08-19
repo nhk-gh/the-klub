@@ -67,6 +67,7 @@ app.get('/thumbs', routes.thumbs1);
 app.get('/randomPhoto', routes.randomPhoto);
 app.get('/singlePhoto', routes.singlePhoto1);
 app.get('/deletePhoto', routes.deletePhoto);
+app.get('/deleteAllUserPhotos', routes.deleteAllUserPhotos);
 app.post('/addComment', routes.addComment);
 
 app.get("/addPhoto", photo_routes.addPhoto);

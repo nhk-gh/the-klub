@@ -1,14 +1,27 @@
 <div>
     <div class="split">
-        <span class="title"> Welcome, {{ titleBar.logged.firstname }}</span>
+        <span class="title"> Welcome, {{ titleBar.logged.firstname }}<span>&nbsp;&#9660;</span></span>
         <!--span style="margin-left: 5px"></span-->
 
         <ul>
-            <li hor-menu-item>
-                <a href="#" ng-click='accountDialog("profile")'  ng-style="linkColor()"> Edit profile</a>
+            <li hor-menu-item ng-show="showGalleryMenu()">
+                <a href="/addPhoto" ng-style="linkColor()">Add photo(s)</a>
             </li>
+
+            <li hor-menu-item ng-show="showGalleryMenu()">
+                <a href="#" ng-click='accountDialog("deleteall")' ng-style="linkColor()"> Delete all photos</a>
+            </li>
+
+            <li ng-show="showGalleryMenu()"><div class="menu-separator" ng-style="linkColor()"></div></li>
+
             <li hor-menu-item>
-                <a href="#" ng-click='accountDialog("logout")'  ng-style="linkColor()"> Log out</a>
+                <a href="#" ng-click='accountDialog("profile")' ng-style="linkColor()"> Edit profile</a>
+            </li>
+
+            <li><div class="menu-separator" ng-style="linkColor()"></div></li>
+
+            <li hor-menu-item>
+                <a href="#" ng-click='accountDialog("logout")' ng-style="linkColor()"> Log out</a>
             </li>
         </ul>
     </div>

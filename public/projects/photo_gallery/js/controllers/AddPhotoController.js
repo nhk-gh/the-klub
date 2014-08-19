@@ -98,7 +98,7 @@ theKlubApp.controller("AddPhotoController",
         $scope.uploadFile = function() {
             var fd = new FormData();
             //$scope.files = addPhotoService.photos;
-            $log.warn($scope.files) ;
+           // $log.warn($scope.files) ;
 
             for (var i in addPhotoService.photos) {
                 fd.append("photo", addPhotoService.photos[i]);
@@ -126,7 +126,7 @@ theKlubApp.controller("AddPhotoController",
             //fd.append("new-genre", "");
             fd.append("genres", addPhotoService.bodyParams[1].tags);
 
-            $log.warn(addPhotoService.bodyParams[1].shortName);
+            //$log.warn(addPhotoService.bodyParams[1].shortName);
 
             if(addPhotoService.bodyParams[1].shortName == "")
                 fd.append("shortname", addPhotoService.photos[1].photoname);

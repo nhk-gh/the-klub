@@ -18,7 +18,7 @@ im.convert.path = '/usr/bin/convert';
 var ObjectID = mongo.ObjectID;
 var db = mongo.Db;
 var dbserver = mongo.Server;
-var dbport = mongo.Connection.DEFAULT_PORT;
+var dbport = 27018; //mongo.Connection.DEFAULT_PORT;
 
 var photodb;
 //var collectionType = "genres";// initial value; can be 'genres' or 'authors'
@@ -259,7 +259,7 @@ exports.thumbs1 = function(req, res){
         query = {'genres.name':req.session.gallery};
     else
         query = {'author':req.session.gallery};
-
+/*
     if (req.query.pagenumber){
         // request by prev/next page
         options = {skip: 20*(req.query.pagenumber-1), limit:20, sort: {addeddate:-1}};
@@ -268,6 +268,11 @@ exports.thumbs1 = function(req, res){
     else{
         // request after refresh:
         options = {skip: 20*(req.session.pagenumber-1), limit:20, sort: {addeddate:-1}};
+    }
+*/
+    if (req.query.pagenumber){
+      // request by prev/next page
+      req.session.pagenumber = req.query.pagenumber;
     }
 
     photodb.collection(colName, function(err, collection){
@@ -279,6 +284,15 @@ exports.thumbs1 = function(req, res){
                     console.log("Thumbs error (2): " + err);
                 else{
                     pages = Math.ceil(cnt/20);
+                    if (pages <= 0) {
+                      pages = 1;
+                    }
+                    if (req.session.pagenumber > pages) {
+                      // delete photo: last photo on page was deleted
+                      req.session.pagenumber = pages;
+                    }
+                    options = {skip: 20*(req.session.pagenumber-1), limit:20, sort: {addeddate:-1}};
+
                     collection.find(query, options).toArray(function (err, items) {
                         if (err)
                             console.log("Thumbs error (3): " + err);
@@ -295,7 +309,7 @@ exports.thumbs1 = function(req, res){
             });
         }
     });
-}
+};
 
 exports.sidebar = function(req,res){
 
@@ -978,12 +992,115 @@ exports.deletePhoto = function(req, res){
     ],
 
     function(err, results){
-        console.log(err);
-        console.log(results);
-
         if (err != null)
             res.json({error:'Fail', qtty: qtty});
         else
             res.send({error: 'Ok', qtty: qtty});
     });
+};
+
+exports.deleteAllUserPhotos = function(req, res){
+  var target_dir;// = './public/images/'+ req.session.user.username;
+  var target_path;// = target_dir + "/" + req.files.photo.name;
+  var target_path_small;
+  var qtty;
+
+  async.series([
+    function(callback){
+      photodb.collection('photos', function(err, collection){
+        if (err){
+          console.log("Delete user photos (1): " + err);
+          callback(err);
+        }
+        else {
+          // find photos of the user
+          collection.find({username: req.query.username}).toArray(function (err, photos) {
+            if (err){
+              console.log("Delete user photos (2): " + err);
+              callback(err);
+            }
+            else {
+              async.eachSeries(photos, function(ph, ecallback) {
+                target_dir = '/home/ubuntu/klub-imgs';
+                target_path = target_dir + "/" + ph.photoname;
+                target_path_small = klbLib.klbThumbPath(target_path);
+                //target_path_650x480 = klbLib.klb650x480Path(target_path);
+
+                //delete photo from disk
+                fs.unlink(target_path, function(err) {
+                  if (err) {
+                    console.log(err);
+                    ecallback(err);
+                  }
+                  else {
+                    // delete thumb from disk
+                    fs.unlink(target_path_small, function(err) {
+                      if (err) {
+                        console.log(err);
+                        ecallback(err);
+                      }
+                      else {
+                        // delete photo from DB
+                        collection.remove({_id: ph._id}, {w:1}, function (err, numDocs) {
+                          if (err){
+                            console.log("Delete user photos (3): " + err);
+                            ecallback(err);
+                          }
+                          else{
+                            /*if (numDocs != 1){
+                              console.log("Delete user photos (4): "  + numDocs + " documents found");
+                              ecallback(new Error("Delete user photos (4): multiple documents found"));
+                            }
+                            else{ */
+                              // delete comments
+                              photodb.collection("comments", function(err, c){
+                                if (err){
+                                  console.log("Delete user photos (5): " + err);
+                                  ecallback(err);
+                                }
+                                else {
+                                  console.log(ph._id);
+                                  console.log(ph._id.toString());
+                                  console.log(typeof(ph._id.toString()));
+
+                                  c.remove({'photoid': ph._id.toString()}, {w:1}, function (err, numComments) {
+                                    if (err){
+                                      console.log("Delete user photos (6): " + err);
+                                      ecallback(err);
+                                    }
+                                    else{
+                                      ecallback(null);
+                                    }
+                                  });
+                                }
+                              });
+                            //}
+                          }
+                        });
+                      }
+                    });
+                  }
+                });
+              },
+              function(err) { // eachSeries's callback function
+                if (err){
+                  callback(err);
+                } else {
+                  callback();
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  ],
+
+  function(err, results){
+    if (err != null)
+      res.json(500);
+    else
+      res.send(200);
+  });
+
 };

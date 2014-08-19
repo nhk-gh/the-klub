@@ -37,7 +37,9 @@
                         {{camera}}
                     </div-->
                 </exif-data>
+                <!--a href=""><img ng-src="../images/tag-blue-icon.png"/></a-->
             </div>
+
             <div id="single-photo-menu" ng-show="enableSinglePhotoMenu()" >
                 <a id="photo-trash" href="#" title="Delete photo" ng-click="deletePhoto()">
                     <img ng-src="../images/symbol-delete-icon-16x16.png"/>
@@ -65,7 +67,7 @@
 
     <div id="photo-tags" class="centered">
         <a ng-repeat="g in photos[1].genres"
-           ng-href="/genre?selectionMode=genres&genre={{ g.name }}">{{ g.name }}</a>
+           ng-href="/genre?selectionMode=genres&genre={{ g.name }}&gallery={{ g.name }}">{{ g.name }}</a>
     </div>
 
     <div id="photo-comments" class="centered">

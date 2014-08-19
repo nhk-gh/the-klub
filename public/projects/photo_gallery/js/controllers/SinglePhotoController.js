@@ -35,6 +35,8 @@ theKlubApp.controller('SinglePhotoController',
             }
         });
 
+        var body = angular.element(document).find('body');
+
         function setScopeData(data){
             $scope.photos = data.photos;
             $scope.title = data.photos[1].link;
@@ -57,16 +59,17 @@ theKlubApp.controller('SinglePhotoController',
         }
 
         $scope.initSinglePhoto = function() {
-            $log.info($route.current.params)
+            body.css('cursor','progress');
             singlePhotoService.downloadPhoto($route.current.params)
                 .then(function(data){
                     setScopeData(data);
+                    body.css('cursor','default');
                 },
                 function(status){
                     $log.warn(status);
+                    body.css('cursor','default');
                 });
         };
-
 
 
         $scope.$on("getPhoto", function(evnt, param){
@@ -85,23 +88,31 @@ theKlubApp.controller('SinglePhotoController',
             if (!$scope.$$phase){
                 $scope.$apply(function(){
                     $scope.getPhoto(id);
-                    console.log("apply");
+                    //console.log("apply");
                 });
             }
             else {
                 $scope.getPhoto(id);
-                console.log("not apply");
+                //console.log("not apply");
             }
         });
 
         $scope.getPhoto = function(param) {
+            body.css('cursor','progress');
+
             singlePhotoService.downloadPhoto({"viewphoto":"Single","id": param})
                 .then(function(data){
                     setScopeData(data);
+                    body.css('cursor','default');
                 },
                 function(status){
                     $log.warn(status);
+                    body.css('cursor','default');
                 });
+        };
+
+        $scope.deleteAllUserPhotos = function(user){
+
         };
 
         $scope.deletePhoto = function(){

@@ -4,14 +4,13 @@ theKlubApp.controller('ThumbsController',
     function ThumbsController($scope, $log, $rootScope, thumbsService, layoutService, $route){
 
         $scope.initThumbs = function(){
-            //$log.warn($route.current.params);
             thumbsService.getThumbs($route.current.params)
                 .then(function(data){
                     $scope.gallery = data.gallery;
                     $scope.currentPage = data.page;
                     $scope.totalPages = data.pages;
                     $scope.thumbs = data.thumbs || [];
-                    $log.info($scope.thumbs)
+                    //$log.info($scope.thumbs)
                     $rootScope.$broadcast('BREADCRUMB_EVT', {type:'thumb', param:$route.current.params});
 
                 }, function(status){
